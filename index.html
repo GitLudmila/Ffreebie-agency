@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)"> -->
+    <!-- <link rel="stylesheet" media="screen and (max-width: 991.98px)" href="/css/mobile.css"> -->
+    <script defer src="js/script.js"></script>
+    <title>FREEBIE AGENCY</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <div class="hero__top">
+                    <div class="logo">SQWD</div>
+                    <ul class="hero__nav">
+                        <li class="nav__elem"><a href="#">WORKS</a></li>
+                        <li class="nav__elem"><a href="#">ABOUT</a></li>
+                        <li class="nav__elem"><a href="#">SERVICES</a></li>
+                        <li class="nav__elem"><a href="#">BLOG</a></li>
+                        <li class="nav__elem"><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="hero__elem--1 hero__text anima" id="hero__text">
+                    <h1 class="hero__title">WHERE GREAT IDEAS COME TO LIFE</h1>
+                    <div class="hero__subtitle">Passionate creative studio helping startups grow their business!</div>
+                </div>
+                <div class="hero__elem--1 hero__text anima" id="hero__text">
+                    <h1 class="hero__title">WHERE NOT GREAT IDEAS COME TO DEATH</h1>
+                    <div class="hero__subtitle">Passionate creative studio helping startups grow their business!</div>
+                </div>
+                <div class="hero__elem--1 hero__text anima" id="hero__text">
+                    <h1 class="hero__title">WHERE LIFE COME TO GREAT IDEAS</h1>
+                    <div class="hero__subtitle">Passionate creative studio helping startups grow their business!</div>
+                </div>
+                <!-- Стоит сделать автоматическое перелистывание -->
+                <div class="hero__controls">
+                    <button class="hero__nums" onclick="currentText(1)">01</button>
+                    <button class="hero__nums" onclick="currentText(2)">02</button>
+                    <button class="hero__nums" onclick="currentText(3)">03</button>
+                </div>
+            </section>
+            <section class="first-section">
+                <!-- Ваще хз че с этим фоном делать -->
+                <!-- Как идея, сделать это элементами и сыграть с z индексом -->
+                <div class="first__top">
+                    <h2 class="first-title">WE ARE</h2>
+                    <h2 class="second-title">THE SQWD</h2>
+                    <p class="first-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p class="first-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="first__bg">
+                    <img class="first__bg-1" src="/pics/section1.1.png" alt=""  style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">
+                    <img class="first__bg-2" src="/pics/section1.2.png" alt=""  style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">
+                    <img class="first__bg-3" src="/pics/section1.3.png" alt=""  style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">
+                </div>
+            </section>
+            <section class="services">
+                <div class="content-container">
+                    <div class="services__title section__title">Our Services</div>
+                    <div class="the-services">
+                        <div class="services__elem" id="services__elem"> 
+                            <div class="elem__top" id="elem__top">
+                                <div class="elem__title">Branding</div>
+                                <div class="elem__sticker" id="serv__svg"><img src="pics/services1.1.svg" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+                            </div>
+                            <div class="elem__subtitle">Lorem ipsum dolor sit amet, consectetur</br> adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                            <button class="elem__link" id="serv__link">READ MORE</button>
+                        </div>
+                        <div class="services__elem" id="services__elem">
+                            <div class="elem__top" id="elem__top">
+                                <div class="elem__title">DESIGN</div>
+                                <div class="elem__sticker" id="serv__svg"><img src="pics/services1.2.svg" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+                            </div>
+                            <div class="elem__subtitle">Lorem ipsum dolor sit amet, consectetur</br> adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                            <button class="elem__link" id="serv__link">READ MORE</button>
+                        </div>
+                        <div class="services__elem" id="services__elem">
+                            <div class="elem__top" id="elem__top">
+                                <div class="elem__title">DEVELOPMENT</div>
+                                <div class="elem__sticker" id="serv__svg"><img src="pics/services1.3.svg" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+                            </div>
+                            <div class="elem__subtitle">Lorem ipsum dolor sit amet, consectetur</br> adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                            <button class="elem__link" id="serv__link">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="latest-works">
+                <div class="content-container">
+                    <div class="late__top">
+                        <div class="late__title section__title">Latest Works</div>
+                        <!-- Нужно сделать штуку с якорями при нажатии -->
+                        <ul class="late__nav">
+                            <li class="late__nav--elem"><a href="#">ALL</a></li>
+                            <li class="late__nav--elem"><a href="#">WEB DESIGN</a></li>
+                            <li class="late__nav--elem"><a href="#">BRANDING</a></li>
+                            <li class="late__nav--elem"><a href="#">PHOTOGRAPHY</a></li>
+                            <li class="late__nav--elem"><a href="#">ILLUSTRATION</a></li>
+                        </ul>
+                    </div>
+                    <div class="late__middle">
+                        <div class="late__elem" id="late__elem">
+                            <div class="late__elem--top">
+                                <div class="late__elem--bg">
+                                    <img src="/pics/latest--works1.png" alt=""
+                                        id="late__bg"
+                                        style="-moz-user-select: none; 
+                                            -webkit-user-select: none; 
+                                            -ms-user-select: none; 
+                                            user-select: none;">
+                                </div>
+                                <h3 class="late__elem--title" id="late__title">100 YEARS<br />PHOTOGRAPHY</h3>
+                            </div>
+                            <div class="late__elem--bottom">
+                                <h4 class="late__elem--subtitle">Photography</h4>
+                                <p class="late__elem--text">Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit.</p>
+                                <a class="read" id="late__read" target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="late__elem" id="late__elem">
+                            <div class="late__elem--top">
+                                <div class="late__elem--bg">
+                                    <img src="/pics/latest--works2.png" alt=""  
+                                        id="late__bg"
+                                        style="-moz-user-select: none; 
+                                            -webkit-user-select: none; 
+                                            -ms-user-select: none; 
+                                            user-select: none;">
+                                </div>
+                                <h3 class="late__elem--title"  id="late__title">A KITTEN’S<br />LIFE</h3>
+                            </div>
+                            <div class="late__elem--bottom">
+                                <h4 class="late__elem--subtitle">Photography</h4>
+                                <p class="late__elem--text">Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit.</p>
+                                <a class="read" id="late__read" target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="late__elem" id="late__elem">
+                            <div class="late__elem--top">
+                                <div class="late__elem--bg">
+                                    <img src="/pics/latest--works3.png" alt=""  
+                                        id="late__bg"
+                                        style="-moz-user-select: none; 
+                                            -webkit-user-select: none; 
+                                            -ms-user-select: none; 
+                                            user-select: none;">
+                                </div>
+                                <h3 class="late__elem--title"  id="late__title">GROOVEMADE<br />PRODUCTS FOR MAC</h3>
+                            </div>
+                            <div class="late__elem--bottom">
+                                <h4 class="late__elem--subtitle">Photography</h4>
+                                <p class="late__elem--text">Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit.</p>
+                                <a class="read" id="late__read" target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="late__elem" id="late__elem">
+                            <div class="late__elem--top">
+                                <div class="late__elem--bg">
+                                    <img src="/pics/latest--works4.png" alt=""  
+                                        id="late__bg"
+                                        style="-moz-user-select: none; 
+                                            -webkit-user-select: none; 
+                                            -ms-user-select: none; 
+                                            user-select: none;">
+                                </div>
+                                <h3 class="late__elem--title" id="late__title">APPLE’s <br />LOST MAGIC</h3>
+                            </div>
+                            <div class="late__elem--bottom">
+                                <h4 class="late__elem--subtitle">Photography</h4>
+                                <p class="late__elem--text">Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit.</p>
+                                <a class="read" id="late__read" target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="late__bottom">
+                        <a class="late__btn"  target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS">view more</a>
+                    </div>
+                </div>
+            </section>
+            <section class="team">
+                <h2 class="team__title section__title">The Team</h2>
+                <div class="team__content">
+                    <div class="team__personas" id="team__personas">
+                        <img src="pics/team1.png" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">
+                        <div class="personas__content" id="personas__content">
+                            <h3>TOM JONES</h3>
+                            <span class="team--line"> </span>
+                            <h4>Creative Tech</h4>
+                            <p>Create with simplicity in mind!</p>
+                        </div>
+                    </div>
+                    <div class="team__personas" id="team__personas">
+                        <img src="pics/team2.png" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">
+                        <div class="personas__content" id="personas__content">
+                            <h3>MICHAEL FRAUP</h3>
+                            <span class="team--line"> </span>
+                            <h4>Creative Director</h4>
+                            <p>Create with simplicity in mind!</p>
+                        </div>
+                    </div>
+                    <div class="team__personas" id="team__personas">
+                        <img src="pics/team3.png" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">
+                        <div class="personas__content" id="personas__content">
+                            <h3>TIM CAHILL</h3>
+                            <span class="team--line"> </span>
+                            <h4>Creative Addman</h4>
+                            <p>Create with simplicity in mind!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimorial">
+                <!-- Нужен слайдер плак плак -->
+                <div class="testi__slider">
+                    <div class="slider__container" id="slider__container">
+                        <div class="slider--track" id="slider--track">
+                            <div class="slider--item anima" id="slider--item">
+                                <p class="slider__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <img class="slider__quote" src="pics/quote-hand-drawn-symbol.svg" alt="">
+                                <h3 class="slider__author">DAVID JAMES
+                                    <span class="author--job"> / Web Design</span>
+                                </h3>
+                                <div class="slider__rate">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                </div>
+                            </div>
+                            <div class="slider--item anima" id="slider--item">
+                                <p class="slider__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <img class="slider__quote" src="pics/quote-hand-drawn-symbol.svg" alt="">
+                                <h3 class="slider__author">DMITRY JOHN
+                                    <span class="author--job"> / Web NonDesign</span>
+                                </h3>
+                                <div class="slider__rate">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                </div>
+                            </div>
+                            <div class="slider--item anima" id="slider--item">
+                                <p class="slider__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <img class="slider__quote" src="pics/quote-hand-drawn-symbol.svg" alt="">
+                                <h3 class="slider__author">JOHN DYED
+                                    <span class="author--job"> / Web FooDesign</span>
+                                </h3>
+                                <div class="slider__rate">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                </div>
+                            </div>
+                            <div class="slider--item anima" id="slider--item">
+                                <p class="slider__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <img class="slider__quote" src="pics/quote-hand-drawn-symbol.svg" alt="">
+                                <h3 class="slider__author">JOHN NULLES
+                                    <span class="author--job"> / Web AntiDesign</span>
+                                </h3>
+                                <div class="slider__rate">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                    <img src="pics/star.svg" alt="" class="rate__star">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__controls">
+                        <button class="btn-prev" id="btn-prev" onclick="plusSlides(-1)">&#10094;</button>
+                        <button class="btn-next" id="btn-next" onclick="plusSlides(1)">&#10095;</button>
+                        <!-- <button class="btn-next"><img src="pics/next.svg" alt=""></button> -->
+                    </div>
+                </div>
+            </section>
+            <section class="work-and-contact">
+                <div class="work-together">
+                    <img src="pics/work-briefcase.svg" alt="" class="work__icon">
+                    <h2 class="work__title">Want to work together?</h2>
+                    <p class="work__text">Amazing. Tell us about your project!</p>
+                    <img src="pics/work-next.svg" alt="" class="subicon">
+                </div>
+                <div class="contact-us">
+                    <img src="pics/contact-mail.svg" alt="" class="contact__icon">
+                    <h2 class="contact__title">Contact us</h2>
+                    <p class="contact__text">Get in touch</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="logo">SQWD</div>
+                <!-- Переделать под адреса мейлту и тд -->
+                <p>
+                    3rd Floor, Santa Monica Beach, CA, San Francisco
+                    <br />
+                    (359) 0 123 456 789 - info@yourmail.com
+                </p>
+                <ul class="social__list">
+                    <li class="social__elem"><a href="#" class="social__link social__link--fb" target="_blank" aria-label="Link to Facebook"></a></li>
+                    <li class="social__elem"><a href="#" class="social__link social__link--tw" target="_blank" aria-label="Link to Twitter"></a></li>
+                    <li class="social__elem"><a href="#" class="social__link social__link--pint" target="_blank" aria-label="Link to Pinterest"></a></li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <p>Copyright 2016 - All Rights Reserved - Designed by JD</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
